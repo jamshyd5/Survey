@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+<title>Survey Form </title>
+</head>
+<body>
+
+<h1 id="title">SURVEY</h1>
+<p id="description">Thank you for taking part in this survey</p>
+<form id="survey-form">
+	<div class="rows">
+			<div class="Label">
+				<label id="name" for="name">Name:</label>
+			</div>
+			<div class="Input">
+				<input id="name-label" type="text" name="name" placeholder="NAME" required="">
+			</div>
+			<div class="Label">
+				<label id="email" for="email">Email:</label>
+			</div>
+			<div class="Input">
+				<input id="email-label" type="email" name="email" placeholder="EMAIL" required="">
+			</div>
+			<div class="Label">
+				<label id="number" for="age">Age:</label>
+			</div>
+			<div class="Input">
+				<input id="number-label" type="number" name="age" placeholder="AGE" min="5" max="100">
+			</div>
+	<div class="rows1-1">
+			<div class="Label1">
+				<label id="dropdown">Sex</label>
+			</div>
+			<div class="dropdown">
+				<select class="inputs2">
+					<option  disabled selected value>Please Choose</option>
+					<option>Male</option>	
+					<option>Female</option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</div>
+	</div>		
+	<div class="rows1">
+			<div class="Label1">
+				<label id="dropdown">Did You Finish Your Assignments?</label>
+			</div>
+			<div class="dropdown">
+				<select class="inputs2">
+					<option  disabled selected value>Please Choose</option>
+					<option>Yes</option>	
+					<option>No</option>
+					<option>Ive thought about it, but did not do it</option>
+					<option>Yes but actually No</option>
+				</select>
+			</div>
+			
+	</div>
+
+	<div class="rows2">
+		<p>Would you do your assignments later?</p>
+		<div>
+		<label>
+			<input class="boxes" type="radio" name="user-recommended" value="definitely"/>Definitely
+		</label>
+		</div>
+		<div>
+		<label>
+			<input class="boxes" type="radio" name="user-recommended" value="maybe"/>Maybe
+		</label>
+		</div>
+		<div>
+		<label>
+			<input class="boxes" type="radio" name="user-recommended" value="not-sure"/>Not Sure
+		</label>
+		</div>
+	</div>
+
+	<div class="rows3">
+		<p>What is your favorite food</p>
+		<select class="inputs2" required>
+			<option disabled selected value>Please choose</option>
+			<option value="inapoy">Inapoy</option>
+			<option value="rice">Rice</option>
+			<option value="kanin">Kanin</option>
+		</select>
+	</div>
+
+	<div class="rows4">
+		<p>What games do you play? (Check all that applies)</p>
+		<div>
+		<label>
+			<input type="checkbox" name="prefer" value="banorant" />Banorant
+		</label>
+		</div>
+		<div>
+		<label>
+			<input type="checkbox" name="prefer" value="dota3"/>Dota3
+		</label>
+		</div>
+		<div>
+		<label>
+			<input type="checkbox" name="prefer" value="apex-legends"/>Apexza Legands
+		</label>
+		</div>
+		<div>
+		<label>
+			<input type="checkbox" name="prefer" value="LuL"/>Lul
+		</label>
+		</div>
+	</div>
+
+	<div class="rows5">
+		<p>Anything you want to see?</p>
+		<textarea id="textarea" name="comment" placeholder="Please enter your comment here..."></textarea>
+	</div>
+
+	<div class="rows6">
+		<button id="submit" type="submit">Submit</button>
+	</div>
+
+	</div>
+</form>
+</body>
+</html>
